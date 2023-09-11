@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+      .menu {
+        transition: all 300ms;
+      }
+
+      .menu:hover {
+        background-color: white;
+        border-radius: 0.5rem;
+      }
+    </style>
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <!-- search start -->
+    <div class="collapse" id="search">
+        <div class="alert alert-primary mb-0">
+            <div class="container">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Username">
+                    <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
+                </div>
+                <h3 class="my-3">Quick Links</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="" class="text-decoration-none d-block my-2 text">Link 1</a>
+                        <a href="" class="text-decoration-none d-block my-2 text">Link 2</a>
+                        <a href="" class="text-decoration-none d-block my-2 text">Link 3</a>
+                        <a href="" class="text-decoration-none d-block my-2 text">Link 4</a>
+                        <a href="" class="text-decoration-none d-block my-2 text">Link 5</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="" class="text-decoration-none d-block my-2 text">Link 1</a>
+                        <a href="" class="text-decoration-none d-block my-2 text">Link 2</a>
+                        <a href="" class="text-decoration-none d-block my-2 text">Link 3</a>
+                        <a href="" class="text-decoration-none d-block my-2 text">Link 4</a>
+                        <a href="" class="text-decoration-none d-block my-2 text">Link 5</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6"><img class="img-fluid" src="data:image/webp;base64,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" alt=""></div>
+                                <div class="col-sm-6">
+                                    <h3>Fake Product</h3>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <button type="button" class="btn btn-outline-primary">Shop Now</button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search end -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">SKILLHUB</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <button class="btn btn-light btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" >
+                Menu
+              </button>
+              <div class="dropdown-menu w-100 alert alert-primary">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="px-2 py-4 menu d-flex align-items-center gap-3">
+                        <i class="bi bi-laptop display-4"></i>
+                        <div>
+                          <h6>Laptops</h6>
+                          <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+          </div>
+          <div class="ms-auto">
+            <button data-bs-toggle="collapse" data-bs-target="#search" type="button" class="btn btn-outline-light"><i class="bi bi-search"></i></button>
+            <button data-bs-toggle="offcanvas" data-bs-target="#cart" type="button" class="btn btn-outline-light"><i class="bi bi-cart"></i></button>
+            <button data-bs-toggle="offcanvas" data-bs-target="#login" type="button" class="btn btn-light">Login <i class="bi bi-lock"></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- login start -->
+    <div class="offcanvas offcanvas-start"  id="login">
+      <div class="offcanvas-header bg-primary text-light">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card">
+            <div class="card-header">Login</div>
+            <div class="card-body">
+              <div>
+                <label for="email" class="form-label">First Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter Your Email"
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please choose a username.</div>
+              </div>
+              <div class="mt-2">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Enter Your Password"
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please choose a username.</div>
+              </div>
+              <button type="button" class="btn btn-primary w-100 mt-3">
+                Login
+              </button>
+              <p class="text-center mt-3">
+                Dont Have Account? <a href="#">Create Account</a>
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- login end -->
+    <!-- cart start -->
+    <div class="offcanvas offcanvas-end"  id="cart">
+      <div class="offcanvas-header bg-primary text-light">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="alert alert-primary mb-0 offcanvas-body">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+              </div>
+              <div class="col-sm-6">
+                <h6>Fake product</h6>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-sm-3"></div>
+  
+            </div>
+            <p class="text-center text-success">you have saved 12440</p>
+            <div class="btn-group w-100" role="group">
+              <button type="button" class="btn btn-outline-danger">Left</button>
+              <button type="button" class="btn btn-outline-primary">Middle</button>
+              <button type="button" class="btn btn-outline-warning">Right</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="img-fluid" src="data:image/webp;base64,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" alt="">
+              </div>
+              <div class="col-sm-6">
+                <h6>Fake product</h6>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-sm-3"></div>
+  
+            </div>
+            <p class="text-center text-success">you have saved 12440</p>
+            <div class="btn-group w-100" role="group">
+              <button type="button" class="btn btn-outline-danger">Left</button>
+              <button type="button" class="btn btn-outline-primary">Middle</button>
+              <button type="button" class="btn btn-outline-warning">Right</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span>
+              I have Coupon
+            </span>
+            <div class="d-flex justify-content-between my-2">
+              <span>price</span> <strong>45454</strong>
+            </div>
+            <div class="d-flex justify-content-between my-2">
+              <span>tax</span> <strong>4554</strong>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+              <span>Total</span> <strong>87878</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cart end -->
+    <!-- carousel start -->
+    <div class="carousel mt-5 slide" data-bs-ride="carousel" data-bs-interval="1000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-sm-6 text-end">
+              <img class="img-fluid" src="data:image/webp;base64,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" alt="">
+            </div>
+            <div class="col-sm-6 d-flex flex-column justify-content-center align-items-start">
+              <h5>Dell XPS</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-sm-6 text-end">
+              <img class="img-fluid" src="data:image/webp;base64,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" alt="">
+            </div>
+            <div class="col-sm-6 d-flex flex-column justify-content-center align-items-start">
+              <h5>Dell XPS</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- carousel end -->
+    <!-- feature starts -->
+    <div class="bg-primary py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="d-flex gap-4">
+              <i class="bi bi-credit-card display-6"></i>
+              <div>
+                <h6>Secure Checkout</h6>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- feature end -->
+    <!-- product start -->
+    <div class="container my-5">
+      <div class="d-flex justify-content-between align-items-center">
+        <h3 class="display-6">Products</h3>
+        <button type="button" class="btn btn-primary btn-sm">View all</button>
+      </div>
+    </div>
+    <!-- product end -->
+    <!-- dummy product start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-8">
+                  <img class="img-fluid" src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+                </div>
+                <div class="col-sm-4">
+                  <img class="img-fluid" src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+                  <img class="img-fluid" src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="card-footer alert alert-primary mb-0">
+                <div class="d-flex justify-content-between">
+                  <strong>Fake product</strong>
+                  <p>Starting price 45555/-</p>
+                </div>
+                <button class="btn btn-outline-primary w-100">Show Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="badge bg-success">most popoular</div>
+                <i class="bi bi-heart"></i>
+              </div>
+              <img class="img-fluid mt-3" src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+              <div class="text-center">
+                <p>Laptop</p>
+                <p>Starting price 554</p>
+                <p>
+                  <i class="text-warning bi bi-star-fill"></i>
+                  <i class="text-warning bi bi-star-fill"></i>
+                  <i class="text-warning bi bi-star-fill"></i>
+                  <i class="text-warning bi bi-star-half"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- dummy product end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>
